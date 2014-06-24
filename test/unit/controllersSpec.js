@@ -5,11 +5,12 @@
 describe('controllers', function(){
   beforeEach(module('myApp.controllers'));
 
-
   it('should ....', inject(function($controller) {
     //spec body
-    var myCtrl1 = $controller('MyCtrl1', { $scope: {} });
+    var scope = {};
+    var myCtrl1 = $controller('MyCtrl1', { $scope: scope });
     expect(myCtrl1).toBeDefined();
+    expect(scope.ololo).toBe('alala2');
   }));
 
   it('should ....', inject(function($controller) {

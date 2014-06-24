@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "angular-coffee-seed",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "repository": "https://github.com/gothy/angular-coffee-seed",
   "license": "MIT",
   "devDependencies": {
     "karma": "~0.10",
@@ -11,9 +11,17 @@
     "http-server": "^0.6.1",
     "bower": "^1.3.1",
     "shelljs": "^0.2.6",
-    "karma-junit-reporter": "^0.2.2"
+    "karma-junit-reporter": "^0.2.2",
+    "gulp": "3.6.x",
+    "coffee-script": "1.7.x",
+    "gulp-coffee": "1.x.x",
+    "gulp-rename": "1.2.x",
+    "gulp-sass": "0.7.x",
+    "gulp-util": "^2.2.14"
   },
   "scripts": {
+    "preinstall": "npm install -g gulp coffee-script",
+    
     "postinstall": "bower install",
 
     "prestart": "npm install",
